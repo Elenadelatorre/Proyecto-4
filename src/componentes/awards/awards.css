@@ -1,0 +1,31 @@
+.awards {
+  position: relative;
+  background-image: url('./public/premios.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.awards-content {
+  display: flex;
+  flex-direction: column;
+
+  height: 41%;
+  max-width: 600px;
+  margin: 120px;
+}
+
+.awards-content h1 {
+  font-size: 3rem;
+
+  color: black;
+}
+
+.awards-content p {
+  font-size: 1.4rem;
+
+  color: black;
+}

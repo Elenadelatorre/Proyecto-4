@@ -1,0 +1,32 @@
+.flex-container {
+  justify-content: flex-start;
+}
+
+.idioms {
+  position: relative;
+  background-image: url('./public/idioms.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.idioms-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  max-width: 600px;
+  margin: 120px;
+}
+
+.idioms-content h1 {
+  font-size: 3rem;
+
+  color: black;
+}
+
+.idioms-content p {
+  font-size: 1.4rem;
+
+  color: black;
+}

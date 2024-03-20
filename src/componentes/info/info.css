@@ -1,0 +1,190 @@
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--rtc-gap-s);
+}
+
+.column {
+  flex-direction: column;
+}
+
+.info {
+  gap: var(--rtc-gap-l);
+
+  justify-content: space-evenly;
+  color: #000;
+  height: 100vh;
+}
+
+.achievements-list {
+  width: 600px;
+  position: relative;
+  gap: 0px;
+  align-items: start;
+  padding-left: var(--rtc-padding-xl);
+}
+
+.achievements-list > li {
+  box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05),
+    0px 12px 16px -4px rgba(17, 24, 39, 0.1);
+  border-radius: var(--rtc-primary-br);
+  padding: var(--rtc-padding-m);
+  position: relative;
+  width: auto;
+  background-color: var(--rtc-primary-bg);
+}
+
+.achievements-list > li > img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.achievements-list > li:nth-child(1) > img {
+  top: -30px;
+  right: -30px;
+}
+
+.achievements-list > li:nth-child(2) > img {
+  top: -45px;
+  left: -40px;
+}
+
+.achievements-list > li:nth-child(3) > img {
+  top: -10px;
+  right: -20px;
+}
+
+.achievements-list > li:nth-child(4) > img {
+  bottom: -40px;
+  right: -40px;
+}
+
+.achievements-list > li > p {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.achievements-list > li > h4 {
+  font-size: 25px;
+  color: #667299;
+  font-weight: 400;
+  border-left: 8px solid var(--rtc-color-4);
+  padding-left: var(--rtc-padding-xs);
+}
+
+.achievements-list > li:nth-child(odd) {
+  z-index: 20;
+}
+
+.achievements-list > li:nth-child(1) {
+  top: 50px;
+  left: 200px;
+}
+
+.achievements-list > li:nth-child(3) {
+  bottom: 20px;
+  left: 150px;
+}
+
+.achievements-list > li:nth-child(4) {
+  bottom: 80px;
+  left: 20px;
+}
+
+.icon {
+  animation: swing 1s ease-in-out infinite alternate;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Estilos para tabletas */
+@media screen and (max-width: 768px) {
+  .achievements-list > li {
+    width: 200px; 
+    height: 200px; 
+  }
+
+  .achievements-list > li > img {
+    width: 30px; 
+    height: 30px; 
+  }
+
+  .achievements-list > li > p {
+    font-size: 18px; 
+  }
+
+  .achievements-list > li > h4 {
+    font-size: 14px; 
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .achievements-list > li {
+    width: 150px; 
+    height: 150px; 
+  }
+
+  .achievements-list > li > img {
+    width: 20px; 
+    height: 20px; 
+  }
+
+  .achievements-list > li > p {
+    font-size: 14px; 
+  }
+
+  .achievements-list > li > h4 {
+    font-size: 12px; 
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .achievements-list > li {
+    width: 120px; 
+    height: 120px; 
+    padding: 5px; 
+  }
+
+  .achievements-list > li > img {
+    width: 18px; 
+    height: 18px; 
+  }
+
+  .achievements-list > li > p {
+    font-size: 12px; 
+  }
+
+  .achievements-list > li > h4 {
+    font-size: 10px; 
+  }
+}

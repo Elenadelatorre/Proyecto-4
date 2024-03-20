@@ -1,0 +1,31 @@
+.projects {
+  position: relative;
+  background-image: url('./public/proyecto2.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  max-width: 600px;
+  margin: 120px;
+  justify-content: center;
+}
+
+.projects-content h1 {
+  font-size: 3rem;
+
+  color: white;
+}
+
+.projects-content p {
+  font-size: 1.4rem;
+
+  color: white;
+}

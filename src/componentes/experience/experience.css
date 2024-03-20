@@ -1,0 +1,28 @@
+.experience {
+  position: relative;
+  background-image: url('./public/experience.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  height: 61%;
+  max-width: 600px;
+  margin: 120px;
+}
+
+.experience-content h1 {
+  font-size: 3rem;
+
+  color: black;
+}
+
+.experience-content p {
+  font-size: 1.4rem;
+
+  color: black;
+}

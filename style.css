@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /* FONTS */
+  --rtc-primary-font: 'Work Sans', sans-serif;
+
+  /* BRANDING COLORS */
+  --rtc-color-1: #ffffff;
+  --rtc-color-2: black;
+  /* BACKGROUND-COLORS */
+  --rtc-primary-bg: var(--rtc-color-1);
+  --rtc-secondary-bg: var(--rtc-color-2);
+
+  /* TEXT-COLORS */
+  --rtc-primary-text: black;
+  --rtc-secondary-text: var(--rtc-color-1);
+
+  /* BORDER RADIUS */
+  --rtc-primary-br: 4px;
+  --rtc-secondary-br: 2px;
+
+  /* SPACINGS */
+  --rtc-margin-xs: 10px;
+  --rtc-margin-s: 20px;
+  --rtc-margin-m: 30px;
+  --rtc-margin-l: 40px;
+  --rtc-margin-xl: 50px;
+  --rtc-margin-section: 100px;
+
+  --rtc-padding-xs: 10px;
+  --rtc-padding-s: 20px;
+  --rtc-padding-m: 30px;
+  --rtc-padding-l: 40px;
+  --rtc-padding-xl: 50px;
+
+  --rtc-gap-xs: 10px;
+  --rtc-gap-s: 20px;
+  --rtc-gap-m: 30px;
+  --rtc-gap-l: 40px;
+  --rtc-gap-xl: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--rtc-primary-font);
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--rtc-gap-s);
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  color: #495057;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}

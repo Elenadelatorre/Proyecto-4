@@ -1,6 +1,6 @@
 .projects {
   position: relative;
-  background-image: url('./public/assets/proyecto2.jpg');
+  background-image: url('./proyecto2.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;

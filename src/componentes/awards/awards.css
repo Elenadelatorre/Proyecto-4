@@ -1,6 +1,6 @@
 .awards {
   position: relative;
-  background-image: url('./public/premios.jpg');
+  background-image: url('./public/assets/premios.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;

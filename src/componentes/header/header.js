@@ -5,7 +5,7 @@ export function printHeader() {
   header.classList.add('flex-container');
   header.innerHTML = `
   <div class="flex-container">
-  <img class="logo" src="./public/desarrollador.png" alt="logo CV" />
+  <img class="logo" src="./public/assets/desarrollador.png" alt="logo CV" />
   <h1><i>Curriculum Vitae</i></h1>
 </div>
 <nav>

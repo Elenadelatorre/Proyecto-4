@@ -1,11 +1,11 @@
 .projects {
   position: relative;
-  background-image: url('./public/proyecto2.jpg'); 
+  background-image: url('./public/assets/proyecto2.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 

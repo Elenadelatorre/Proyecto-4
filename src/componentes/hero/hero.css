@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background-image: url('./public/hero.jpg'); 
+  background-image: url('./public/assets/hero.jpg');
   background-size: cover;
   background-position: center;
   height: 85vh;
@@ -30,40 +30,40 @@
 
 @media screen and (max-width: 975px) {
   .hero-content h1 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
 
   .hero-content p {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 
   .hero-content p {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 629px) {
   .hero-content h1 {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 
   .hero-content p {
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 530px) {
   .hero-content h1 {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 
   .hero-content p {
-    font-size: 0.5rem; 
+    font-size: 0.5rem;
   }
 }

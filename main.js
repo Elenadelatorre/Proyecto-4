@@ -2,12 +2,10 @@ import './style.css';
 
 import { printHeader } from './src/componentes/header/header.js';
 import { printHero } from './src/componentes/hero/hero.js';
-import { printExperience } from './src/componentes/experience/experience.js';
-import { printProjects } from './src/componentes/projects/projects.js';
-import { printAwards } from './src/componentes/awards/awards.js';
-import { printIdioms } from './src/componentes/idioms/idioms.js';
-import { printFooter } from './src/componentes/footer/footer.js';
 import { printInfo } from './src/componentes/info/info.js';
+import { printProjects } from './src/componentes/projects/projects.js';
+import { printSection } from './src/componentes/section/section.js';
+import { printFooter } from './src/componentes/footer/footer.js';
 
 const body = document.querySelector('body');
 const main = document.querySelector('main');
@@ -16,20 +14,91 @@ const main = document.querySelector('main');
 const headerElement = printHeader();
 const hero = printHero();
 const info = printInfo();
-const experience = printExperience();
-const projects = printProjects();
-const awards = printAwards();
-const idioms = printIdioms();
 const footer = printFooter();
 
-// Insertar las secciones en el DOM
 body.insertAdjacentElement('afterbegin', headerElement);
 main.insertAdjacentElement('afterbegin', hero);
 main.insertAdjacentElement('beforeend', info);
-main.insertAdjacentElement('beforeend', experience);
-main.insertAdjacentElement('beforeend', projects);
-main.insertAdjacentElement('beforeend', awards);
-main.insertAdjacentElement('beforeend', idioms);
+main.insertAdjacentElement('beforeend', footer);
+
+// Crear una sección de proyectos
+const projectsSection = document.createElement('section');
+projectsSection.id = 'projects-section';
+projectsSection.classList.add('projects');
+projectsSection.classList.add('flex-container');
+main.insertAdjacentElement('beforeend', projectsSection);
+
+// Definir un array de objetos que representen los proyectos
+const projects = [
+  {
+    title: 'Tienda Virtual',
+    imageSrc: './tienda.png',
+    projectLink: 'https://poetic-meerkat-a29b48.netlify.app'
+  },
+  {
+    title: 'Inspirest',
+    imageSrc: './bombilla.png',
+    projectLink: 'https://eloquent-medovik-2afd4b.netlify.app'
+  }
+  // Agregar más proyectos según sea necesario
+];
+
+// Iterar sobre el array de proyectos y crear una ficha de proyecto para cada uno
+projects.forEach((project) => {
+  const projectCard = printProjects(
+    project.title,
+    project.imageSrc,
+    project.projectLink
+  );
+  projectsSection.appendChild(projectCard);
+});
+
+// Contenido para las secciones combinadas
+const combinedSections = [
+  {
+    id: 'experience-section',
+    title: 'Experiencia laboral en programación',
+    subTitle: 'Aplicando habilidades',
+    content: [
+      'Desarrolladora front-end',
+      'Desarrolladora back-end',
+      'Analista de datos',
+      'Seguridad informática'
+    ]
+  },
+  {
+    id: 'awards-section',
+    title: 'Reconocimientos y premios',
+    subTitle: 'Distinciones y logros',
+    content: [
+      'Innovación en Seguridad Informática',
+      'Mejor Diseño de Interfaz (UI/UX)',
+      'Desarrollo APP',
+      'Investigación Inteligenica Artificial'
+    ]
+  },
+  {
+    id: 'idioms-section',
+    title: 'Dominio de Idiomas',
+    subTitle: 'Idiomas utilizados en Entornos Profesionales',
+    content: [
+      'Inglés: Nivel Avanzado',
+      'Español: Lengua Materna',
+      'Aleman: Nivel Básico',
+      'Chino Mandarín: Nivel Intermedio'
+    ]
+  }
+];
+
+// Insertar las secciones en el DOM
+
+combinedSections.forEach((section) => {
+  main.insertAdjacentElement(
+    'beforeend',
+    printSection(section.id, section.title, section.subTitle, section.content)
+  );
+});
+
 body.insertAdjacentElement('beforeend', footer);
 
 // Función para mostrar el formulario de contacto
@@ -67,6 +136,11 @@ if (submitButton) {
     hideContactForm();
   });
 }
+
+// Agregar evento de "click" al botón de cancelar para ocultar el formulario:
+document.getElementById('close-form').addEventListener('click', function () {
+  document.getElementById('contact-form-container').style.display = 'none';
+});
 
 // Agregar evento de "click" al enlace de "información":
 const linkInfo = document.querySelector('#myInfo');

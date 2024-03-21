@@ -13,7 +13,7 @@
 .info {
   gap: var(--rtc-gap-l);
   margin-top: var(--rtc-margin-section);
-  margin-bottom: var(--rtc-margin-section);
+
   justify-content: space-evenly;
   color: #000;
   height: 100vh;
@@ -22,7 +22,7 @@
 .achievements-list {
   width: 600px;
   position: relative;
-  gap: 0px;
+  gap: 20px;
   align-items: start;
   padding-left: var(--rtc-padding-xl);
 }
@@ -169,6 +169,15 @@
 }
 
 @media screen and (max-width: 414px) {
+  .info {
+    margin: 10px;
+    height: 100vh;
+  }
+
+  .achievements-list {
+    padding: 40px;
+  }
+
   .achievements-list > li {
     width: 120px;
     height: 120px;
@@ -178,6 +187,20 @@
   .achievements-list > li > img {
     width: 18px;
     height: 18px;
+  }
+  #myExperience > img {
+    right: -5px;
+    top: -1px;
+  }
+
+  #myProjects > img {
+    left: -9px;
+    top: -18px;
+  }
+
+  #myIdioms > img {
+    right: -20px;
+    bottom: 1px;
   }
 
   .achievements-list > li > p {

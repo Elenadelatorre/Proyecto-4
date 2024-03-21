@@ -33,6 +33,7 @@ export function printHeader() {
       <textarea id="message" name="message" required></textarea>
 
       <button type="submit">Enviar</button>
+      <button type="button" id="close-form">Cancelar</button>
     </form>
   </div>
 </div>

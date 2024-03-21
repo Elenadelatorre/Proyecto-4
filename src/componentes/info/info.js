@@ -21,7 +21,7 @@ export function printInfo() {
   <li class="achievement" id="myAwards">
     <img class="icon bounce" src="./medalla.png" alt="premios" />
     <p>10</p>
-    <h4>Premios Ganados</h4>
+    <h4>Premios Destacados</h4>
   </li>
   <li class="achievement" id="myIdioms">
     <img class="icon bounce" src="./idiomas.png" alt="idiomas" />

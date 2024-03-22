@@ -25,8 +25,6 @@ export function printSection(id, title, subTitle, contentArray) {
   const button = document.createElement('button');
   button.textContent = 'Saber más';
   button.addEventListener('click', () => {
-    // Aquí puedes añadir la lógica para mostrar más información
-    // sobre la sección o cualquier acción que desees realizar.
     console.log('Más información sobre la sección ', title);
   });
   sectionContent.appendChild(button);

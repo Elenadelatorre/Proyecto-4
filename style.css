@@ -65,7 +65,7 @@ body {
   cursor: pointer;
 }
 
-/*EXPERIENCE*/
+/*SECTION*/
 section {
   position: relative;
   background-size: cover;
@@ -158,6 +158,7 @@ section div p {
   background-color: #ff1493;
 }
 
+/*FOOTER*/
 .footer {
   background-color: transparent;
   color: #495057;

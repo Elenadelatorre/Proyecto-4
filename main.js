@@ -40,7 +40,6 @@ const projects = [
     imageSrc: './bombilla.png',
     projectLink: 'https://eloquent-medovik-2afd4b.netlify.app'
   }
-  // Agregar más proyectos según sea necesario
 ];
 
 // Iterar sobre el array de proyectos y crear una ficha de proyecto para cada uno
@@ -91,7 +90,6 @@ const combinedSections = [
 ];
 
 // Insertar las secciones en el DOM
-
 combinedSections.forEach((section) => {
   main.insertAdjacentElement(
     'beforeend',

@@ -1,11 +1,3 @@
-.flex-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: var(--rtc-gap-s);
-}
-
 .column {
   flex-direction: column;
 }

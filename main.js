@@ -142,57 +142,21 @@ document.getElementById('close-form').addEventListener('click', function () {
   document.getElementById('contact-form-container').style.display = 'none';
 });
 
-// Agregar evento de "click" al enlace de "información":
-const linkInfo = document.querySelector('#myInfo');
-if (linkInfo) {
-  linkInfo.addEventListener('click', function () {
-    const targetSection = document.querySelector('#info-section');
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
+//Agregar las funcionalidades de scroll en una sola función:
+function addScrollEvent(iconId, sectionId) {
+  const icon = document.querySelector(iconId);
+  if (icon) {
+    icon.addEventListener('click', function () {
+      const targetSection = document.querySelector(sectionId);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
 }
 
-// Agregar evento de "click" al icono de experiencia:
-const iconExperience = document.querySelector('#myExperience');
-if (iconExperience) {
-  iconExperience.addEventListener('click', function () {
-    const targetSection = document.querySelector('#experience-section');
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-}
-
-// Agregar evento de "click" a los iconos de proyectos:
-const iconProjects = document.querySelector('#myProjects');
-if (iconProjects) {
-  iconProjects.addEventListener('click', function () {
-    const targetSection = document.querySelector('#projects-section');
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-}
-
-// Agregar evento de "click" al icono de premios:
-const iconAwards = document.querySelector('#myAwards');
-if (iconAwards) {
-  iconAwards.addEventListener('click', function () {
-    const targetSection = document.querySelector('#awards-section');
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-}
-
-// Agregar evento de "click" al icono de idiomas:
-const iconIdioms = document.querySelector('#myIdioms');
-if (iconIdioms) {
-  iconIdioms.addEventListener('click', function () {
-    const targetSection = document.querySelector('#idioms-section');
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-}
+addScrollEvent('#myInfo', '#info-section');
+addScrollEvent('#myExperience', '#experience-section');
+addScrollEvent('#myProjects', '#projects-section');
+addScrollEvent('#myAwards', '#awards-section');
+addScrollEvent('#myIdioms', '#idioms-section');

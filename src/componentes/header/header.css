@@ -29,7 +29,7 @@
   display: none;
   position: fixed;
   top: 25%;
-  left: 35%;
+  left: 3%;
   width: 30%;
   height: auto;
   background-color: rgba(0, 0, 0, 0.5);
@@ -138,6 +138,10 @@
 @media screen and (max-width: 536px) {
   .header {
     height: 20svh;
+    gap: 0px;
+  }
+  .header div {
+    gap: 2px;
   }
   #contact-form-container {
     left: 20%;

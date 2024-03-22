@@ -31,7 +31,7 @@ main.insertAdjacentElement('beforeend', projectsSection);
 // Definir un array de objetos que representen los proyectos
 const projects = [
   {
-    title: 'Tienda Virtual',
+    title: 'Tienda',
     imageSrc: './tienda.png',
     projectLink: 'https://poetic-meerkat-a29b48.netlify.app'
   },
